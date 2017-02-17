@@ -31,14 +31,11 @@ alias yyC='echo -e "sudo xbps-remove -O\n" && sudo xbps-remove -O'
 # other
 alias rr='ranger'
 alias ee='nano'
-alias eee='micro'
 alias gg='glances'
 alias grep='grep --color'
 alias zzz='echo -e "sudo pm-suspend\n" && sudo pm-suspend'
 alias poweroff='echo -e "sudo poweroff\n" && sudo poweroff'
 alias du='du -ach | sort -hr | most'
-alias yc='fasd -e catt'
-alias yn='fasd -e nano'
 alias mplayer='mplayer -af volnorm'
 alias wetter='curl -4 http://wttr.in/Eupen'
 alias yt='mpsyt'
@@ -82,7 +79,6 @@ copy () { scp $@ userB@192.168.1.X: ; }
 #####   END FUNCTIONS   #####
 
 
-screenfetch
 
 
 

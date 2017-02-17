@@ -27,7 +27,7 @@ static const Rule rules[] = {
 	/* class        instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",       NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",    NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Processing", NULL,       NULL,       0,            0,           -1 },
+	{ "Processing", NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -58,6 +58,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]        = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]         = { "st", NULL };
 static const char *roxtermcmd[]      = { "roxterm", NULL };
+static const char *lxterminalcmd[]   = { "lxterminal", NULL };
 static const char *chromiumcmd[]     = { "chromium", NULL };
 static const char *nanocmd[]         = { "st", "-e", "nano", NULL };
 static const char *rangercmd[]       = { "st", "-e", "ranger", NULL };
@@ -69,7 +70,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|Mod1Mask,              XK_Return, spawn,          {.v = roxtermcmd } },
+	{ MODKEY|Mod1Mask,              XK_Return, spawn,          {.v = lxterminalcmd } },
 	{ MODKEY|Mod1Mask,              XK_b,      spawn,          {.v = chromiumcmd } },
 	{ MODKEY|Mod1Mask,              XK_e,      spawn,          {.v = nanocmd } },
 	{ MODKEY|Mod1Mask,              XK_f,      spawn,          {.v = rangercmd } },

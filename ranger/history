@@ -1,36 +1,3 @@
-touch commands.py
-shell geany  commands.py 
-shell vlc Sneaky.Pete.S01E01.WEB.x264.mp4 
-shell vlc Sneaky_Pete_S01E03_AMZ_WEB_x264-Poke.mp4 
-mkdir sneaky pete
-shell vlc Arrival.2016.DVDScr.x264-4RRIVED.mkv 
-deletey
-mkdir incorporated
-rename balloon1.png 
-rename balloon4.png
-rename balloon0.png 
-rename balloon1.png
-mkdir the mick
-shell  vlc The.Mick.S01E01.HDTV.x264-FLEET\[PRiME\].mkv 
-touch last-seen
-mkdir data
-shell geeqie  happy.jpg
-shell sudo nano java.nanorc 
-shell eee main.go 
-mkdir scatter
-mkdir F   I   L   M   E
-mkdir M   U   S   I   K
-mkdir H   Ö   R   B   Ü   C   H   E   R
-mkdir Tagebuch der Aüokalypse
-rename Tagebuch der Apokalypse
-mkdir NEU
-mkdir C
-rename Moonlight.avi
-rename XXXMoonlight.2016
-shell vlc Doctor.Strange.2016.DVDScr.XVID.AC3.HQ.Hive-CM8.avi 
-open_with nano
-shell vlc The.Mick.S01E06.HDTV.x264-FLEET\[PRiME\].mkv 
-shell vlc A.Monster.Calls.2016.720p.WEB-DL.850MB.MkvCage.mkv 
 
 shell processing  pixels.pde 
 shell processing-java  pixels.pde 
@@ -42,9 +9,42 @@ rename XXXHörbücher ROMY
 rename XXXTagebuch der Apokalypse
 find 
 mkdir MISC
-open_with 
 mkdir SDL tut
 shell tar xzvf tutorial01.tar.gz 
 rename img
 mkdir my configs
+shell 
+cd 
+rename 
+cd video/
+find sl
+find etc
+find kilo
+find github
+shell ./run
+shell cp -r pixels pixels2
+rename pixels2.pde
+mkdir exercices
+mkdir santa clarita diet
+shell vlc The.Girl.with.All.the.Gifts.2016.1080p.BluRay.x264.DTS-JYK.mkv 
+shell vlc erdenton.mp3 
+touch last-seen
+open_with nano
+shell vlc Underworld.Blood.Wars.2017.HDRip.XviD.AC3-EVO.avi 
+deletey
+rename XXXDie Versuchung
+rename XXXBis zum letzten Atemzug
+rename 13-AudioTrack 13.mp3
+rename 07-AudioTrack 07.mp3
+rename 03-AudioTrack 03.mp3
+rename 05-AudioTrack 05.mp3
+rename 09-AudioTrack 09.mp3
+rename 12-AudioTrack 12.mp3
+rename XXXSturz der Titanen
+rename XXXBand 1 - Der Fledermausmann
+open_with 
+rename XXXDreh Dich nicht um
+rename XXXBand 1 Die Flüsse von London
+rename XXXBand 2 Schwarzer Mond über Soho
+mkdir legion
 delete

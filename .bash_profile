@@ -21,7 +21,7 @@ devmon &
 
 # starts the X system on login
 # login happens automatic too
-#       added "-a void" for "GETTY_ARGS" in /etc/sv/agetty-tty1/conf
+#       added "-a void" for "GETTY_ARGS" in /etc/sv/agetty-tty1/c$
 # might be overwritten by an system update
 
 #xset -dpms &
