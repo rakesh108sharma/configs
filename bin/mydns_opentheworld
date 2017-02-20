@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# rewrites my /etc/resolv.conf file
+# sets dns to unblock websites
+#
+
+sudo sh -c "echo '#open the world' > /etc/resolv.conf"
+
+# OpenDNS
+sudo sh -c "echo nameserver 208.67.222.222 >> /etc/resolv.conf"
+sudo sh -c "echo nameserver 208.67.220.220 >> /etc/resolv.conf"
+
+
+echo
+echo
+mydns_show
+echo
+
+
+## END
+
+

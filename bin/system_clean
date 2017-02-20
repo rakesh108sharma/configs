@@ -1,0 +1,53 @@
+#!/bin/bash
+#
+# cleans the system
+#
+clear
+echo
+echo "     *** UPDATING ***"
+echo
+sleep 2
+sudo xbps-install -Syu
+
+clear
+echo
+echo "     *** REMOVING OLD KERNELS ***"
+echo
+sleep 2
+sudo vkpurge rm all
+
+clear
+echo
+echo "     *** CLEANING ***"
+echo
+sleep 2
+sudo xbps-remove -o
+
+clear
+echo
+echo "     *** DELETE OLD PACKAGES ***"
+echo
+sleep 2
+sudo xbps-remove -O
+
+clear
+echo
+echo "     *** MAINTAIN SSD ***"
+echo
+sleep 1
+sudo fstrim /
+
+clear
+echo
+echo "     *** POST-UPDATING ***"
+echo
+sleep 3
+sudo xbps-install -Syu
+
+clear
+echo
+echo "     *** THE END ***"
+echo
+sleep 5
+clear
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# just prints out /etc/resolv.conf to check dns servers
+#
+
+echo
+echo
+echo
+cat /etc/resolv.conf
+echo
+echo
+

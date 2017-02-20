@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# sets my .xinitrc file
+# chooses i3
+#
+cat > ~/.xinitrc << END
+
+setxkbmap de
+synclient TapButton1=1
+xset r rate 280 25
+
+clipit &
+volumeicon &
+ssd_clean &
+
+exec i3
+
+END

@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# rewrites my /etc/resolv.conf file
+# sets "fastest" dns to resolve names
+# (used program "namebench" for test)
+#
+
+sudo sh -c "echo '#fast' > /etc/resolv.conf"
+
+# Belgacom Pool42 BE
+sudo sh -c "echo nameserver 195.238.2.22 >> /etc/resolv.conf"
+
+# Global Crossing snv US
+sudo sh -c "echo nameserver 67.17.215.132 >> /etc/resolv.conf"
+
+# BelBone BE
+sudo sh -c "echo nameserver 195.13.1.13 >> /etc/resolv.conf"
+
+echo
+echo
+mydns_show
+echo
+
+
+## END
+
+

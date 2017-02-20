@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# checks the date and sends a notification every 10 days to clean the ssd
+
+value=$(date '+%d')
+case $value in
+	01|10|20) notify-send -u critical ".\n   time to execute     \n\n           fstrim / \n.";;
+	*) notify-send -u normal ".\n   ssd   OK \n.";;
+esac
+
+exit 0
+
+
+ #(( $(date '+%d') < 10 )) && notify-send -u critical "time to execut [ fstrim / ]"
+

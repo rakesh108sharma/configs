@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# sets my .xinitrc file
+# chooses dwm
+#
+cat > ~/.xinitrc << END
+
+setxkbmap de
+synclient TapButton1=1
+xset r rate 280 25
+
+clipit &
+volumeicon &
+ssd_clean &
+
+slstatus -d
+exec dwm
+
+END
+
+
