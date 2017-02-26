@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# turn ON firewall
+
+sudo iptables -F
+sudo iptables -X
+
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+sudo iptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP           # NULL packets
+sudo iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP   # syn-flood attack
+sudo iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP            # xmas attack
+
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+sudo iptables -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT
+sudo iptables -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --syn -j DROP 
+
+
+
+
+sudo iptables -P INPUT DROP
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -P FORWARD DROP
+
+
+notify-send -u normal ".\n   firewall   ON \n."
+

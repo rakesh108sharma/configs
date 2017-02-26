@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# turn firewall ON and block EVERYTHING
+
+sudo iptables -F
+sudo iptables -X
+
+sudo iptables -P INPUT DROP
+sudo iptables -P OUTPUT DROP
+sudo iptables -P FORWARD DROP
+
+notify-send -u normal ".\n   firewall blocks \n   EVERYTHING! \n."
