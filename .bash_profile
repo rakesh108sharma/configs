@@ -24,10 +24,6 @@ devmon &
 #       added "-a void" for "GETTY_ARGS" in /etc/sv/agetty-tty1/c$
 # might be overwritten by an system update
 
-#xset -dpms &
-#xset s noblank &
-#xset s off &
-
 xx
 
 
