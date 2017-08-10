@@ -12,6 +12,7 @@ PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -a'
+alias l='clear; ls'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -30,6 +31,7 @@ alias yyC='echo -e "sudo xbps-remove -O\n" && sudo xbps-remove -O'
 
 # other
 alias rr='ranger'
+alias nn='noice'
 alias ee='nano'
 alias gg='glances'
 alias grep='grep --color'
@@ -39,6 +41,7 @@ alias du='du -ach | sort -hr | most'
 alias mplayer='mplayer -af volnorm'
 alias wetter='curl -4 http://wttr.in/Eupen'
 alias yt='mpsyt'
+alias fw='sudo iptables -L'
 #####   END ALIAS   #####
 
 

@@ -1,50 +1,50 @@
-mkdir MISC
-mkdir SDL tut
-shell tar xzvf tutorial01.tar.gz 
-rename img
-mkdir my configs
-shell 
-cd 
-rename 
-cd video/
-find sl
-find etc
-find kilo
-find github
-shell ./run
-shell cp -r pixels pixels2
-rename pixels2.pde
-mkdir exercices
-mkdir santa clarita diet
-shell vlc The.Girl.with.All.the.Gifts.2016.1080p.BluRay.x264.DTS-JYK.mkv 
-shell vlc erdenton.mp3 
+find 
+mkdir the handmaids tale
+jamestown
+mkdir jamestown
+mkdir arduino
+shell vlc I.Love.You.Both.2016.HDRip.XviD.AC3-EVO.avi 
+shell vlc Handsome.Devil.2016.HDRip.XviD.AC3-EVO.avi 
+shell vlc Heartstone.2016.HDRip.x264-MM.mp4 
+rename Heartstone_2016.mp4
+rename Heartstone_2016.eng.srt
+rename Heartstone_2016.srt
+mkdir heartstone
+mkdir mist
+shell vlc The.Hippopotamus.2017.720p.BluRay.H264.AAC-RARBG.mp4 
+shell unzip NDB_List_Caucasus_by_Martin_Renders.zip
+mkdir ozark
+shell vlc Something\ Like\ Summer\ \(2017\)\ -\ Festival\ Screener\ 720p.mp4 
+rename Something_Like_Summer_2017.mp4
+rename Track03.mp3
+
+shell vlc King.Arthur.Legend.of.the.Sword.2017.720p.WEB-DL.999MB.MkvCage.mkv 
+mkdir salvation
+mkdir midnight texas
+mkdir will
+shell vlc Midnight.Texas.S01E01.HDTV.x264-KILLERS\[ettv\].mkv 
+shell vlc Alien.Covenant.2017.1080p.WEB-DL.DD5.1.H264-FGT.mkv 
+mkdir drum
+bulkrename 
+alias 
+help 
+help
+deletey
+rename Shkoon__full_live_set.webm
+shell vlc 0306.mov 
+shell vlc 'Né Giulietta, né Romeo 2015 DVDRip x264.mp4' 
+rename Né_Giulietta_né_Romeo.mp4
+rename Jayson_Bend_Queen_and_Country.mp4
+rename Jonathan_2016.mkv
+rename Nunca_vas_a_estar_solo.mp4
+rename Te_Prometo_Anarquia.mkv
+rename Take_Me_to_the_River.avi
+rename XXXTake.Me.to.the.River
+rename XXXJayson_Bend_Queen_and_Country.mp4
+rename XXXTe_Prometo_Anarquia.mkv
+rename XXXJonathan_2016.mkv
+rename XXXNunca_vas_a_estar_solo.mp4
+open_with 
 touch last-seen
 open_with nano
-shell vlc Underworld.Blood.Wars.2017.HDRip.XviD.AC3-EVO.avi 
-deletey
-rename XXXDie Versuchung
-rename XXXBis zum letzten Atemzug
-rename 13-AudioTrack 13.mp3
-rename 07-AudioTrack 07.mp3
-rename 03-AudioTrack 03.mp3
-rename 05-AudioTrack 05.mp3
-rename 09-AudioTrack 09.mp3
-rename 12-AudioTrack 12.mp3
-rename XXXSturz der Titanen
-rename XXXBand 1 - Der Fledermausmann
-rename XXXDreh Dich nicht um
-rename XXXBand 1 Die Flüsse von London
-rename XXXBand 2 Schwarzer Mond über Soho
-mkdir legion
-shell vim example_16_01_Capture.pde 
-mkdir please like me
-mkdir data
-rename film.mkv
-rename film.avi
-open_with 
-mkdir blacklist
-shell vlc Please.Like.Me.S04E01.PDTV.x264-CBFM.mkv 
-mkdir Season 4
-rename It's_Only_the_End_of_the_World.mkv
-shell vlc Fantastic.Beasts.and.Where.to.Find.Them.2016.1080p.BluRay.H264.AAC-RARBG.mp4 
 delete

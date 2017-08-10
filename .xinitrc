@@ -11,6 +11,7 @@ clipit &
 volumeicon &
 ssd_clean &
 
+bgs -z .wallpaper.jpg &
 slstatus -d
 exec dwm
 

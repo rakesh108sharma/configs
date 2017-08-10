@@ -3,9 +3,14 @@
 # checks the date and sends a notification every 10 days to clean the ssd
 
 value=$(date '+%d')
+#case $value in
+#	01|10|20) notify-send -u critical ".\n   time to execute     \n\n           fstrim / \n.";;
+#	*) notify-send -u normal ".\n   ssd   OK \n.";;
+#esac
+
 case $value in
-	01|10|20) notify-send -u critical ".\n   time to execute     \n\n           fstrim / \n.";;
-	*) notify-send -u normal ".\n   ssd   OK \n.";;
+    01|10|20) (echo "time to execute          system_clean"; sleep 10) | dzen2 -bg darkred -fg grey80 -h 50 -fn lime;;
+    *) (echo "system     O K"; sleep 5) | dzen2 -bg darkblue -fg grey80 -h 50 -fn lime;;
 esac
 
 exit 0

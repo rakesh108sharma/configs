@@ -5,6 +5,9 @@ cp ~/.bash_profile .
 cp ~/.bash_functions .
 cp ~/.bash_colors .
 
+cp ~/.mkshrc .
+cp ~/.profile .
+
 cp ~/.xinitrc .
 cp ~/.nanorc .
 

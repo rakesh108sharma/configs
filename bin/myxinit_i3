@@ -17,6 +17,7 @@ clipit &
 volumeicon &
 ssd_clean &
 
+bgs -z .wallpaper.jpg &
 exec i3
 
 END

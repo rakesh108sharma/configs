@@ -21,7 +21,7 @@ echo
 echo "     *** CLEANING ***"
 echo
 sleep 2
-sudo xbps-remove -o
+sudo xbps-remove -yo
 
 clear
 echo
