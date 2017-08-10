@@ -1,0 +1,75 @@
+PS1=$'\n\e[1;36m$PWD \n\e[1;33m->\e[1;0m '
+
+export HISTFILE=$HOME/.mksh_history
+
+#####   A L I A S   #####
+# terminal
+alias ls='ls --color=auto'
+alias ll='ls -lh'
+alias la='ls -a'
+alias l='clear; ls'
+..() { cd .. ; }
+...() { cd ../.. ; }
+....() { cd ../../.. ; }
+alias c='clear'
+alias _='sudo'
+
+# packet manager
+alias yyu='echo -e "sudo xbps-install -Su\n" && sudo xbps-install -Su'
+#alias yys='echo -e "sudo xbps-query -Rs\n" && sudo xbps-query -Rs'
+alias yyr='echo -e "sudo xbps-remove\n" && sudo xbps-remove'
+alias yyl='echo -e "sudo xbps-query -l | most\n" && sudo xbps-query -l | most'
+alias yyi='echo -e "sudo xbps-install\n" && sudo xbps-install'
+alias yyc='echo -e "sudo xbps-remove -o\n" && sudo xbps-remove -o'
+alias yyC='echo -e "sudo xbps-remove -O\n" && sudo xbps-remove -O'
+
+# other
+alias rr='ranger'
+alias nn='noice'
+alias sxiv='sxiv -s f'
+alias ee='nano'
+alias gg='glances'
+alias grep='grep --color'
+alias zzz='echo -e "sudo pm-suspend\n" && sudo pm-suspend'
+alias poweroff='echo -e "sudo poweroff\n" && sudo poweroff'
+alias du='du -ach | sort -hr | most'
+alias mplayer='mplayer -af volnorm'
+alias wetter='curl -4 http://wttr.in/Eupen'
+alias yt='mpsyt'
+alias fw='sudo iptables -L'
+#####   END ALIAS   #####
+
+
+
+#####   F U N C T I O N S   ##### 
+xlocate() { sudo xlocate $1 | cut -f1 | sort -u ; }
+
+myip ()
+{
+    echo
+    #value=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')
+    value=$(curl -s http://ipecho.net/plain)
+    echo -e "${echo_bold_green} $value ${echo_normal}"
+    echo
+}
+
+yys () 
+{ 
+echo -e "LOCAL\tsudo xbps-query -s\n" && sudo xbps-query -s "$1" 
+echo
+echo -e "REPO\tsudo xbps-query -Rs\n" && sudo xbps-query -Rs "$1"  
+}
+
+down4me () { curl -s "http://www.downforeveryoneorjustme.com/$1" | sed '/just you/!d;s/<[^>]*>//g' ; }
+del () { mkdir -p /tmp/.trash && mv "$@" /tmp/.trash ; }
+mkcd () {  mkdir -p -- "$*"; cd -- "$*" ; }
+lsgrep () { ls --color=auto | grep --color=auto "$*" ; }
+copy () { scp $@ userB@192.168.1.X: ; }
+
+
+#####   END FUNCTIONS   #####
+
+
+
+
+
